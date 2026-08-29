@@ -1,7 +1,7 @@
 <div align="center">
 
   <!-- Header Banner -->
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,18,25,255,43,95,255,90,31&height=220&section=header&text=Rauhan%20Ahmed&fontSize=50&fontAlignY=38&desc=AI%20Systems%20Engineer%20%7C%20Agentic%20AI%20%C2%B7%20Enterprise%20RAG%20%C2%B7%20Production%20ML&descFontSize=17&descAlignY=62&fontColor=ffffff&descColor=f7f4ee" width="100%" alt="Rauhan Ahmed Banner" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,18,25,255,43,95,255,90,31&height=220&section=header&text=Rauhan%20Ahmed%20Siddiqui&fontSize=50&fontAlignY=38&desc=AI%20Systems%20Engineer%20%7C%20Agentic%20AI%20%C2%B7%20Enterprise%20RAG%20%C2%B7%20Production%20ML&descFontSize=17&descAlignY=62&fontColor=ffffff&descColor=f7f4ee" width="100%" alt="Rauhan Ahmed Siddiqui Banner" />
 
   <!-- Animated Typing Tagline -->
   <a href="https://rauhanahmed.in">
