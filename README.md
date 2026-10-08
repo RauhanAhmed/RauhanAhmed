@@ -31,6 +31,7 @@
 
   <!-- High-Level Production Stats -->
   <p align="center">
+    <img src="https://img.shields.io/badge/Ecosystem-LangChain_Official_Ecosystem-1C3C3C?style=flat-square&logo=langchain&logoColor=white" />
     <img src="https://img.shields.io/badge/Experience-5%2B_Years_in_Production-0F172A?style=flat-square&logo=clock&logoColor=white" />
     <img src="https://img.shields.io/badge/Delivered-20%2B_AI_Deployments-FF5A1F?style=flat-square&logo=rocket&logoColor=white" />
     <img src="https://img.shields.io/badge/Competition-1st_Place_Rocket_Capital_AI-FF2B5F?style=flat-square&logo=trophy&logoColor=white" />
@@ -49,6 +50,7 @@ I am an **AI Systems Engineer** with **5+ years of experience** designing, build
 
 Throughout my career, I have worked across the entire AI lifecycle — from solution architecture and applied research to high-throughput deployment, optimization, and scaling. I focus on turning ambitious technical ideas into reliable, resilient AI systems that deliver measurable business value.
 
+- **LangChain Ecosystem Contributor**: Architect of `langchain-dynamic-tools-middleware` — official ecosystem package enabling local Rust-accelerated hybrid tool retrieval (80.5% fewer prompt tokens, 122× faster).
 - **Delivery & Track Record**: Delivered 20+ AI projects across startups and international teams, building platforms that improved operational efficiency by up to 70%.
 - **Core Engineering Domains**: Architected production-ready systems across Agentic AI, Multi-Agent Orchestration, Enterprise RAG, Computer Vision, NLP, Intelligent Analytics, and Cloud MLOps.
 - **System Reliability**: Engineered distributed AI microservices handling live SQL integration, multimodal inspection, and high-concurrency LLM inference with 99.9% uptime.
@@ -60,6 +62,7 @@ Throughout my career, I have worked across the entire AI lifecycle — from solu
 
 | Metric | Achievement | Domain / Scope |
 | :--- | :--- | :--- |
+| **Ecosystem Contributor** | Official LangChain Ecosystem | `langchain-dynamic-tools-middleware` (80.5% Token Cut, 122× Faster) |
 | **Production Experience** | 5+ Years | AI Systems Engineering, Solution Architecture, Applied ML |
 | **Platforms Delivered** | 20+ Solutions | Startups, Enterprises, and Global Consulting Engagements |
 | **Operational Impact** | Up to 70% Efficiency Gain | Automated Review, Agentic Workflows, Insight Generation |
@@ -126,6 +129,39 @@ Throughout my career, I have worked across the entire AI lifecycle — from solu
 ### Featured Open-Source & Production Projects
 
 <table>
+  <tr>
+    <td colspan="2" valign="top">
+      <div align="center">
+        <h3><a href="https://github.com/RauhanAhmed/langchain-dynamic-tools-middleware">⚡ langchain-dynamic-tools-middleware</a></h3>
+        <p><b>Official LangChain Ecosystem Package · Local Rust-Accelerated Hybrid Retrieval for Dynamic Tool Selection</b></p>
+        <p>
+          <a href="https://github.com/RauhanAhmed/langchain-dynamic-tools-middleware"><img src="https://img.shields.io/badge/GitHub-Repository-181717?style=flat-square&logo=github&logoColor=white" /></a>
+          &nbsp;
+          <a href="https://pypi.org/project/langchain-dynamic-tools-middleware"><img src="https://img.shields.io/badge/PyPI-langchain--dynamic--tools--middleware-3775A9?style=flat-square&logo=pypi&logoColor=white" /></a>
+          &nbsp;
+          <img src="https://img.shields.io/badge/LangChain-Official_Ecosystem-1C3C3C?style=flat-square&logo=langchain&logoColor=white" />
+          &nbsp;
+          <img src="https://img.shields.io/badge/Token_Reduction-80.5%25-10B981?style=flat-square" />
+          &nbsp;
+          <img src="https://img.shields.io/badge/Selection_Latency-122%C3%97_Faster-FF5A1F?style=flat-square" />
+          &nbsp;
+          <img src="https://img.shields.io/badge/Accuracy_Loss-0%25-blue?style=flat-square" />
+        </p>
+      </div>
+      <blockquote>
+        <b>Give your agent 100 tools. Pay for 4. Keep every point of accuracy.</b><br />
+        An open-source middleware for LangChain agents that dynamically selects only the most relevant tools for each request using local hybrid retrieval. Officially recognized and listed as part of the <b>LangChain Ecosystem</b>.
+      </blockquote>
+      <p><b>The Problem:</b> As agents scale from demos to production, they need access to dozens or hundreds of tools (Databases, APIs, GitHub, CRMs, calendars, analytics). Sending every tool definition to the LLM on every turn causes higher token costs, increased latency, and tool confusion.</p>
+      <p><b>The Solution:</b> Instead of using another LLM to select tools, performs local hybrid retrieval using Alibaba's Rust-based <code>zvec</code> engine:</p>
+      <ul>
+        <li><b>Dense embeddings (MiniLM):</b> Semantic intent understanding across diverse agent workflows.</li>
+        <li><b>Sparse embeddings (SPLADE):</b> Exact matching for specialized tool names, database schemas, and parameters.</li>
+        <li><b>Reciprocal Rank Fusion (RRF):</b> Optimal ranking quality with zero additional model calls.</li>
+      </ul>
+      <p><b>Results (100 Tools Benchmark):</b> <code>80.5% fewer prompt tokens</code> · <code>108ms selection latency (122× faster than LangChain's built-in LLMToolSelectorMiddleware)</code> · <code>0% accuracy loss (69.7% BFCL vs 69.3% baseline)</code> · <code>$0 additional API cost</code>.</p>
+    </td>
+  </tr>
   <tr>
     <td width="50%" valign="top">
       <h3><a href="https://github.com/RauhanAhmed/GemFit">GemFit: AI Virtual Jewelry & Fashion Try-On</a></h3>
